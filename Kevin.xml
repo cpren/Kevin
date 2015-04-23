@@ -179,6 +179,9 @@
                                                             <next>
                                                               <block type="oled_drawtext" id="772">
                                                                 <field name="TEXT">i m here</field>
+                                                                <next>
+                                                                  <block type="movement_stop" id="782"></block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
