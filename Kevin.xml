@@ -64,22 +64,22 @@
                             <field name="NUM">200</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="variables_set" id="315" inline="true">
-                            <field name="VAR">Light</field>
-                            <value name="VALUE">
-                              <block type="math_number" id="347">
-                                <field name="NUM">0</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
                 </next>
               </block>
             </statement>
+            <next>
+              <block type="variables_set" id="315" inline="true">
+                <field name="VAR">Light</field>
+                <value name="VALUE">
+                  <block type="math_number" id="347">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </statement>
       </block>
