@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="145" inline="true" x="185" y="-20">
+  <block type="variables_set" id="145" inline="true" x="219" y="-7">
     <field name="VAR">Light</field>
     <value name="VALUE">
       <block type="math_number" id="204">
@@ -16,21 +16,6 @@
         <statement name="DO">
           <block type="controls_whileUntil" id="156" inline="false">
             <field name="MODE">UNTIL</field>
-            <value name="NUMBER">
-              <block type="logic_compare" id="163" inline="true">
-                <field name="OP">EQ</field>
-                <value name="A">
-                  <block type="variables_get" id="149">
-                    <field name="VAR">Light</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="170">
-                    <field name="NUM">5</field>
-                  </block>
-                </value>
-              </block>
-            </value>
             <statement name="DO">
               <block type="led_select" id="103" inline="true">
                 <field name="ACTION">FLASH</field>
@@ -64,6 +49,16 @@
                             <field name="NUM">200</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="variables_set" id="315" inline="true">
+                            <field name="VAR">Light</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="347">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -74,5 +69,18 @@
         </statement>
       </block>
     </next>
+  </block>
+  <block type="logic_compare" id="163" inline="true" x="393" y="86">
+    <field name="OP">EQ</field>
+    <value name="A">
+      <block type="variables_get" id="149">
+        <field name="VAR">Light</field>
+      </block>
+    </value>
+    <value name="B">
+      <block type="math_number" id="170">
+        <field name="NUM">5</field>
+      </block>
+    </value>
   </block>
 </xml>
