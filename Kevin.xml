@@ -34,7 +34,7 @@
             </value>
             <next>
               <block type="variables_set" id="215" inline="true">
-                <field name="VAR">item</field>
+                <field name="VAR">Light</field>
                 <value name="VALUE">
                   <block type="logic_compare" id="211" inline="true">
                     <field name="OP">EQ</field>
@@ -44,8 +44,18 @@
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="242">
-                        <field name="NUM">1</field>
+                      <block type="math_arithmetic" id="249" inline="true">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="253">
+                            <field name="VAR">Light</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="242">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
