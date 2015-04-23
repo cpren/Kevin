@@ -26,7 +26,7 @@
         </value>
         <statement name="DO">
           <block type="led_select" id="103" inline="true">
-            <field name="ACTION">ON</field>
+            <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="variables_get" id="197">
                 <field name="VAR">Light</field>
